@@ -26,59 +26,58 @@
 				justify-content: center;
 				align-content: center;
 				align-items: center;
-			}
-			._wrapper {
-				display: flex;
-				justify-content: center;
-				align-content: center;
-				align-items: center;
-				height: 100%;
-				width: 80%;
+				height: 100vh;
 				background: #eeeeee;
 			}
-			._card {
-				width: 250px;
+			._wrapper {
+				width: 20rem;
 				display: flex;
 				flex-direction: column;
 				align-content: center;
 				background-color: #fff;
 				padding: 10px;
 				border-radius: 10px;
-			}
-			._qr-code {
-				width: 250px;
-				size: 30px;
-				border-radius: 10px;
-			}
-			._text {
-				font-family: Arial, Helvetica, sans-serif;
+
+				width: 18rem;
+				gap: 1rem;
+				background-color: rgb(0, 255, 30);
+				text-align: center;
+				padding: 1rem;
+				background-color: hsl(0, 0%, 100%);
+				border-radius: 1rem;
 				display: flex;
+				justify-content: space-between;
 				flex-direction: column;
-				align-content: center;
+				padding-bottom: 2.5rem;
+				box-shadow: 0 0 1.25rem -0.938rem;
 			}
-			._heading {
-				font-weight: bold;
+			h1 {
+				color: hsl(218, 44%, 22%);
+				font-size: 1.3rem;
+				padding-top: 0.5rem;
 			}
-			._info {
-				font-weight: bold;
-				color: grey;
+
+			p {
+				color: hsl(220, 15%, 55%);
+				padding: 0 1rem;
+				font-size: 0.9rem;
+			}
+
+			img {
+				border-radius: 1rem;
+				width: 100%;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="_wrapper">
-			<div class="_card">
-				<img class="_qr-code" rel="icon" src="./images/image-qr-code.png" />
-				<span class="_text">
-					<p class="_heading"
-						>Improve your front-end skills by building projects
-					</p>
-					<p class="_info"
-						>Scan the QR code to visit Frontend Mentor and take your coding
-						skills to the next level</p
-					>
-				</span>
-			</div>
+			<img alt="qr-code" src="./images/image-qr-code.png" />
+
+			<h1>Improve your front-end skills by building projects </h1>
+			<p
+				>Scan the QR code to visit Frontend Mentor and take your coding skills
+				to the next level</p
+			>
 		</div>
 	</body>
 </html>
